@@ -1,9 +1,11 @@
 #headline {
+    font-family: Open Sans;
     background-color:#aed6f1;
     width:100%;
 }
 
 #headline2 {
+    font-family: Open Sans;
     width:100%;
 }
 
@@ -20,6 +22,7 @@
 
 
 .left {
+    font-family: Open Sans;
     display: inline-block;
     vertical-align: top;
     position:relative;
@@ -29,6 +32,7 @@
 }
 
 .right {
+    font-family: Open Sans;
     display: inline-block;
     vertical-align: top;
     position:relative;
@@ -39,6 +43,7 @@
 
 
 .leftscr {
+    font-family: Open Sans;
     display: inline-block;
     vertical-align: top;
     position:relative;
@@ -50,6 +55,7 @@
 }
 
 .rightscr {
+    font-family: Open Sans;
     display: inline-block;
     vertical-align: top;
     position:relative;
