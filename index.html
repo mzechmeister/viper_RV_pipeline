@@ -4,126 +4,157 @@
         <style>
           body {
           font-family: Open Sans; 
-          margin-left:15px; margin-right:50px; margin-top:30px; margin-bottom:40px;
+          margin-left:0px; margin-right:0px; margin-top:0px; margin-bottom:0px;
+          background-color:#2471a3;
           }
         </style>
-        <title> VIPER - Velocity and IP EstimatoR </title>
+        <title > VIPER - Velocity and IP EstimatoR </title>
     </head>
+    
+    <div id="header">
+        <tt>viper</tt> documentation - Velocity and IP EstimatoR (<tt>viper</tt>)
+    </div>
+    
     <body>
-      <div class="containerscr">
-      <div class="leftscr">
-         <h3 id="headline2"> Navigation</h3>
-           <p><a href="#instruments"> Instruments </a></p>
-           <p><a href="#release"> Release Notes </a></p>
-           <p><a href="#downloads"> Downloads </a></p>
-           <p><a href="#installation"> Installation </a></p>
-           <p><a href="#support"> Getting Support </a></p>
-         </p>
-      </div>
+    <div class="containerscr">
+    
+        <div class="leftscr">
+        
+          <div class="logo">
+            <img src="pics/blue_viper.png" width=99% alt="">
+          </div>
 
+          <div class="navibox">
+            <h3 id="headline_navi"> Navigation</h3>
+            <ul style="text-align: justify; margin-left:0px; margin-right:0px">
+              <li><a href="#introduction" class="navi"> Introduction </a></li>
+              <li><a href="#instruments" class="navi"> Instruments </a></li>           
+              <li><a href="#release" class="navi"> Release Notes </a></li>
+              <li><a href="#downloads" class="navi"> Downloads </a></li>
+              <li><a href="#installation" class="navi"> Installation </a></li>
+              <li><a href="#support" class="navi"> Getting Support </a></li>
+            </ul>
+          </div>
+          
+        </div>
 
       <div class="rightscr">
-        <h1 align="center";  id="headline"> VIPER - Velocity and IP EstimatoR </h1>
-        <br>
-        <p style="text-align: justify;"> <i>viper</i> measures differential radial velocities from stellar spectra taken through iodine or other gas cells. 
+      
+        <p id="introduction"> </p>
+        <h1 align="center";  id="headline_top"> <tt>viper</tt> - Velocity and IP EstimatoR </h1>
+          <p style="text-align: justify; margin-left:30px; margin-right:30px"> <tt>viper</tt> measures differential radial velocities from stellar spectra taken through iodine or other gas cells. 
             It convolves the product of a stellar template and a gas cell spectrum with an instrumental profile. 
             Via least square fitting, it optimizes the parameters of the instrumental profile, the wavelength solution, flux normalization, and the stellar Doppler shift. 
-            <i>viper</i> offers various functions to describe the instrumental profile such as Gaussian, super-Gaussian, skewed Gaussian or mixtures of Gaussians. 
-            Optional, it offers a forward modelling of telluric lines, allowing a fast and easy way of processing instruments operating e.g. in the NIR.
+            <tt>viper</tt> offers various functions to describe the instrumental profile such as Gaussian, super-Gaussian, skewed Gaussian or mixtures of Gaussians. 
+            Optional, it offers a forward modelling of telluric lines, allowing a fast and easy way of processing instruments operating f.e. in the NIR.
             The code is developed for echelle spectra; and additional instruments can easily be added. 
-            A graphical interface facilitates the work with numerous flexible options. </p>
-        <p> <i>viper</i> is developed by Mathias Zechmeister and Jana Köhler.</p>
-        <p> If you publish results with <i>viper</i>, please acknowledge it by citing its bibcode 
-              from <a href=https://ui.adsabs.harvard.edu/abs/2021ascl.soft08006Z>https://ui.adsabs.harvard.edu/abs/2021ascl.soft08006Z</a>.  </p>
-        <br>
+            A graphical interface facilitates the work with numerous flexible options.  </p>
+          <p style="text-align: justify; margin-left:30px; margin-right:30px"> <tt>viper</tt> is developed by Mathias Zechmeister and Jana Köhler.</p>
+          
+          <div class="infobox">
+            <p style="text-align: justify; margin-left:30px; margin-right:30px"> <b>Note:</b> If you publish results with <tt>viper</tt>, please acknowledge it by citing its bibcode 
+             from <br>
+              <a href=https://ui.adsabs.harvard.edu/abs/2021ascl.soft08006Z>href=https://ui.adsabs.harvard.edu/abs/2021ascl.soft08006Z</a>. </p>
+          </div>
+        
+        
         <p id="instruments"> </p>
         <h2 id="headline"> &ensp; Supported Instruments </h2>
-            <p> <i>viper</i> is working for different kinds of instruments in the optical and NIR (covering Y, J, H and K band), no matter of existing gas cell or not. 
+          <p style="text-align: justify; margin-left:30px; margin-right:30px"> <tt>viper</tt> is working for different kinds of instruments in the optical and NIR (covering YJHK bands), no matter of existing gas cell or not. 
                 Currently, the following instruments are implemented: </p>
-              <ul>
-               <li> CES - Coudé Echelle Spectrometer @La Silla </li>
-               <li> CRIRES+ - CRyogenic high-resolution InfraRed Echelle Spectrograph @VLT </li>
-               <li> GIANO-B - Near-Infrared High Resolution Spectrograph of the TNG @La Palma </li>
-               <li> HIRES - High Resolution Echelle Spectrometer @KECK </li>
-               <li> OES - Ondrejov Echelle Spectrograph @Ondrejov </li>
-               <li> TCES - Tautenburg Coudé Echelle Spectrometer @Tautenburg </li>
-               <li> Tull - Tull Coudé Spectrograph @Mc Donald </li>
-               <li> UVES - Ultraviolet and Visual Echelle Spectrograph @VLT </li>
-             </ul>
-           <p> </p> If you are interested in using <i>viper</i> for another instrument, please contact us. 
-        <p> </p>
-        <br>
+          <ul style="text-align: justify; margin-left:30px; margin-right:30px">
+            <li> CES - Coudé Echelle Spectrometer @La Silla </li>
+            <li> CRIRES+ - CRyogenic high-resolution InfraRed Echelle Spectrograph @VLT </li>
+            <li> GAINO-B - Near-Infrared High Resolution Spectrograph of the TNG @La Palma </li>
+            <li> HIRES - High Resolution Echelle Spectrometer @KECK </li>
+            <li> OES - Ondrejov Echelle Spectrograph @Ondrejov </li>
+            <li> TCES - Tautenburg Coudé Echelle Spectrometer @Tautenburg </li>
+            <li> Tull - Tull Coudé Spectrograph @Mc Donald </li>
+            <li> UVES - Ultraviolet and Visual Echelle Spectrograph @VLT </li>
+          </ul>
+          <p style="text-align: justify; margin-left:30px; margin-right:30px"> If you are interested in using <tt>viper</tt> for another instrument, please contact us. </p>   
+        
+        
         <p id="release"> </p>
         <h2 id="headline"> &ensp; Release Notes </h2>
-          <p style="padding-left: 1em;"><strong> <i>viper</i> 1.1 (2024-01-08):</strong> </p>
-              <ul> 
-               <li> Official release of <i>viper</i>. </li>
-               <li> Option of using configure files with parameter settings added. </li>
-               <li> Option of masking wavelength regions in flag file added. </li>
-               <li> Atmosphere data for entire range from visible to K-band added. </li>
-               <li> Added GIANO-B instrument. </li>
-               <li> Some bug fixes. </li>
-              </ul>
-          <p style="padding-left: 1em;"><strong> <i>viper</i> 0.9 (2023-09-15):</strong> </p>
-            <ul> 
-               <li> Early release version. It is made publicly available in order to collect feedback from a larger group of users. </li>
-              </ul>
-        <br>
+          <p style="text-align: justify; margin-left:30px; margin-right:30px";"><strong> <tt>viper</tt> 1.1 (2024-01-08):</strong> </p>
+          <ul style="text-align: justify; margin-left:30px; margin-right:30px"> 
+            <li> Official release of <tt>viper</tt>. </li>
+            <li> Option of using configure files with parameter settings added. </li>
+            <li> Option of masking wavelength regions in flag file added. </li>
+            <li> Atmosphere data for entire range from visible to K-band added. </li>
+            <li> Added GAINO-B instrument. </li>
+            <li> Some bug fixes. </li>
+          </ul>
+          <p style="text-align: justify; margin-left:30px; margin-right:30px";"><strong> <tt>viper</tt> 0.9 (2023-09-15):</strong> </p>
+          <ul style="text-align: justify; margin-left:30px; margin-right:30px"> 
+            <li> Early release version. It is made publicly available in order to collect feedback from a larger group of users. </li>
+          </ul>
+        
+        
         <p id="downloads"> </p>
         <h2 id="headline"> &ensp; Downloads </h2>
-          <p> <i>viper</i> can be downloaded from the Github page: </p>
-          <p style="padding-left: 2em;"><a href="https://github.com/mzechmeister/viper">Github VIPER</a></p>
-          <p> The manual and test report can be downloaded from: </p>
-          <p style="padding-left: 2em;"><a href="doc/VIPER-pipeline-manual.pdf">Manual</a> (last update: 2024-01-08) </p>
-          <p style="padding-left: 2em;"><a href="doc/VIPER_test_report.pdf">Test Report</a> (last update: 2024-01-08) </p>
-          <p> Test data for CRIRES+ and TCES can be downloaded from: </p>
-          <p style="padding-left: 2em;"><a href="https://github.com/mzechmeister/viper_demo_data">Demo data</a></p>
-        <br>
+          <p style="text-align: justify; margin-left:30px; margin-right:30px"> <tt>viper</tt> can be downloaded from the Github page: </p>
+          <p style="padding-left: 2em; margin-left:30px; margin-right:30px;"><a href="https://github.com/mzechmeister/viper">Github VIPER</a></p>
+          <p style="text-align: justify; margin-left:30px; margin-right:30px"> The manual and test report can be downloaded from: </p>
+          <p style="padding-left: 2em; margin-left:30px; margin-right:30px"><a href="doc/VIPER-pipeline-manual.pdf">Manual</a> (last update: 2024-01-08) </p>
+          <p style="padding-left: 2em; margin-left:30px; margin-right:30px"><a href="doc/VIPER_test_report.pdf">Test Report</a> (last update: 2024-01-08) </p>
+          <p style="text-align: justify; margin-left:30px; margin-right:30px"> Test data for CRIRES+ and TCES can be downloaded from: </p>
+          <p style="padding-left: 2em; margin-left:30px; margin-right:30px"><a href="https://github.com/mzechmeister/viper_demo_data">Demo data</a></p>
+        
+        
         <p id="installation"> </p>
         <h2 id="headline"> &ensp; Installation </h2>
-          <p> Prerequisites </p>
+          <p  style="text-align: justify; margin-left:30px; margin-right:30px"> Prerequisites </p>
           <p style="padding-left: 2em;"> </p>
-            <ul>
-               <li> <i>viper</i> runs with Python3, using common standard packages. </li>
+            <ul style="text-align: justify; margin-left:30px; margin-right:30px">
+              <li> <tt>viper</tt> runs with Python3, using common standard packages. </li>
             </ul>
-          </p>
-          <p> Use pip </p>
-          <p style="padding-left: 2em;"> </p>
-            <ul>
-               <li> Download <i>viper</i>  from Github link above </li>
-               <li> Enter the directory </li>
-               <li> <code>pip install -e .</code> </li>
+          <p  style="text-align: justify; margin-left:30px; margin-right:30px"> Use pip </p>
+          <p style="padding-left: 2em; ; margin-left:30px; margin-right:30px"> </p>
+            <ul style="text-align: justify; margin-left:30px; margin-right:30px">
+              <li> Download <tt>viper</tt>  from Github link above </li>
+              <li> Enter the directory and type: </li>
             </ul>
-          </p>
-          <p> Run <i>viper</i>  with: </p>
-          <p style="padding-left: 2em;"> </p>
-            <ul>
-               <li> <code>python3 -m viper [options]</code> </li>
-            </ul>
-          </p>
-        <br>
+            <div class="codebox">  $ pip install -e . </div>                       
+          <p style="text-align: justify; margin-left:30px; margin-right:30px"> Run <tt>viper</tt>  with: </p>
+            <div class="codebox">$ python3 -m viper [options]</div>
+        
+        
         <p id="support"> </p>
         <h2 id="headline"> &ensp; Getting Support </h2>
-          <p> In case of bugs, questions or requests for feature options or instruments, send email to <a href="mailto:viper@uni-goettingen.de">viper@uni-goettingen.de</a> 
+          <p style="text-align: justify; margin-left:30px; margin-right:30px"> In case of bugs, questions or requests for feature options or instruments, send email to viper@uni-goettingen.de 
               starting the subject with <strong>VIPER</strong>. While reporting a bug, please include the following information: </p>
-            <ul>
-               <li> the <i>viper</i> version used </li>
-               <li> the instrument used </li>
-               <li> the command used </li>
-               <li> the config file, if differing from the default </li>
-               <li> the appearing error message </li>
-               <li> optionally, the data set used </li>
-             </ul>
+            <ul style="text-align: justify; margin-left:30px; margin-right:30px">
+              <li> the <tt>viper</tt> version used </li>
+              <li> the instrument used </li>
+              <li> the command used </li>
+              <li> the config file, if differing from the default </li>
+              <li> the appearing error message </li>
+              <li> optionally, the data set used </li>
+            </ul>
           <br><br><br>
-            <div class="container">
-                <div class="left"><img src="pics/GUI_viper.png" width=98% alt="GUI"></div>
-                <div class="right">
-                    <div><img src="pics/viper_TLS_o20_Harps.png" width=94% valign="top" alt="TLS"></div>
-                    <br>
-                    <div><img src="pics/plot_RV.png" width=95% valign="bottom" alt="RV"></div>
-                </div>
+          
+          
+        <div class="container">
+            <div class="left">
+              <img src="pics/GUI_viper.png" width=98% alt="GUI">
             </div>
+            <div class="right">
+              <div><img src="pics/viper_TLS_o20_Harps.png" width=94% valign="top" alt="TLS"></div>
+              <br>
+              <div><img src="pics/plot_RV.png" width=95% valign="bottom" alt="RV"></div>
+            </div>
+        </div>
+        
       </div>
-      </div>
+      
+    </div>
+      
     </body>
+    
+    <footer id="footer">
+            <p class="copyright">© Copyright 2021, Jana Köhler and Mathias Zechmeister</p>
+    </footer>
+
 </html>
