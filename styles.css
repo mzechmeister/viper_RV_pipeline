@@ -3,7 +3,7 @@
   background-color: #333333;
   color : #d6eaf8;
   height: 25px;
-  padding-left: 1em
+  padding-left: 1em;
 }
 
 #footer {
@@ -21,7 +21,8 @@ p.copyright {
         font-size: 0.7em;
         text-align: center;
         bottom:0;
-    }    
+    }
+    
 
 #headline_top {
     font-family: Playfair Display, serif;
@@ -111,7 +112,6 @@ code, kbd, tt, pre, samp, textarea {
     vertical-align: top;
     position:relative;
     width:40%;
-
     float:right;
 }
 
@@ -123,7 +123,7 @@ code, kbd, tt, pre, samp, textarea {
     background-color:#d6eaf8;
     border: 1px #2471a3  groove;
     width:auto;
-    margin-right:30px
+    margin-right:30px;
 }
 
 .logo {
